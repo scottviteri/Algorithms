@@ -64,8 +64,8 @@ def findFactors(n):
     #will be odd, so can generate with consecutive squares
     a = (n-1)/2 #n = b**2 - a**2 = (b+a)(b-a) --> trivial factorization -- need better 
     
-#eventually want to use generaly number field sieve, as it is really super efficient but complicated
-#lso want non-deterministic checker    
+#eventually want to use sieve
+#also want non-deterministic checker    
 def isPrime(x): #O(n^(1/2)) from findFactorsNaive1
     return len(findFactorsNaive1(x)) == 2
 
